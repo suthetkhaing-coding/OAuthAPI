@@ -20,7 +20,8 @@ builder.Services.AddSwaggerGen(c =>
         Type = SecuritySchemeType.Http,
         Scheme = "basic",
         In = ParameterLocation.Header,
-        Description = "Basic Authentication with base64(client_id:client_secret)"
+
+        Description = "Enter client_id as the username and client_secret as the password"
     });
 
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
